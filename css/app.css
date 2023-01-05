@@ -282,6 +282,7 @@ img {
 .modelo:hover {
     transform: scale(1.1); /* Crece el 10% */
     background-size: 30rem;
+    cursor: pointer;
 }
 
 .modelo h3 {
@@ -327,6 +328,10 @@ img {
 }
 
 /* Membresía */
+.membresia:hover{
+    cursor: pointer;
+}
+
 .membresia-tech-grid {
     display: grid;
     grid-template-rows: repeat(2, 40rem);
