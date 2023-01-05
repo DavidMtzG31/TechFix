@@ -492,6 +492,7 @@ video{
     display: grid;
     grid-template-rows: 2;
     padding-top: 5rem;
+    row-gap: 1rem;
 }
 @media (min-width: 768px) {
     .paquete {
