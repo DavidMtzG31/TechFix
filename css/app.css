@@ -6,6 +6,7 @@
     --blanco: #FFFFFF;
     --negro: #1F1E1E;
     --grisClaro: #E1E1E1;
+    --textosLogo: #1CDAFF;
 
     --separacion: 5rem;
 
@@ -67,9 +68,7 @@ img {
 
 /* Degradados */
 .degradado-verde {
-    color: transparent; /* Hace el texto "transparente" porque era blanco */
-    background: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%); /* Se crea el degradado */
-    -webkit-background-clip: text; /* A que parte del elemento se agrega a ese background */
+color: var(--textosLogo)
 }
 
 a{
@@ -518,4 +517,55 @@ a {
 
 .producto {
     padding-top: 2rem;
+}
+
+/* Membresías */
+
+.todasMembresias {
+    padding-top: 7rem;
+}
+
+.membresias {
+    display: grid;
+    padding-top: 3rem;
+}
+@media (min-width: 768px) {
+    .membresias {
+        display: flex;
+        padding-top: 0rem;
+
+    }
+
+    .membresiaTipo,
+    .membresiaFoto {
+    flex: 1;
+}
+
+    .membresias:nth-child(1),
+    .membresias:nth-child(3) {
+        flex-direction: row-reverse;
+}
+
+    .membresiaTipo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+}
+
+}
+
+.membresiaTipo {
+    background-color: var(--negro);
+}
+.membresiaTipo p {
+    color: var(--blanco);
+    text-align: justify;
+    max-width: 120rem; /* Máximo toma 1200px */
+    width: 90%; /* Si hay menos del max, solo toma 90% del espacio disponible */
+    margin: 0 auto;
+    padding-bottom: 3rem;
+}
+
+.tituloMembresia {
+    color: var(--blanco);
 }
