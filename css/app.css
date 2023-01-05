@@ -328,65 +328,30 @@ img {
 }
 
 /* Membresía */
-.membresia:hover{
-    cursor: pointer;
+.membresia {
+    padding: 10rem 0;
 }
 
-.membresia-tech-grid {
+.membresia-grid {
     display: grid;
-    grid-template-rows: repeat(2, 40rem);
-    /* row-gap: var(--separacion); */
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    grid-template-rows: 2;
 }
-@media (min-width: 768px)   {
-    .membresia-tech-grid {
+@media (min-width: 768px) {
+    .membresia-grid {
         grid-template-rows: unset;
-        row-gap: unset;
         grid-template-columns: repeat(2, 1fr);
-        padding: 10rem 0;
     }
 }
 
-.texto-membresia-tech {
+.texto-membresia {
     background-color: var(--negro);
-    grid-row: 2 / 3;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.5rem;
+}
+
+.texto-membresia-escrito {
     color: var(--blanco);
-    margin-top: 5rem;
-}
-@media (min-width: 768px)   {
-    .texto-membresia-tech {
-        grid-column: 1 / 2;
-        grid-row: 1/2;
-        padding: 0;
-        margin-top: 0;
-    }
-}
-
-@media (min-width: 768px) {
-    .texto-membresia-tech-escrito {
-        padding-top: 12rem;
-    }
-}
-
-.texto-membresia-tech h2 {
-    font-size: 4rem;
-}
-
-.texto-membresia-tech p{
-    font-size: 2rem;
-    line-height: 2;
-}
-@media (min-width: 768px)   {
-    .texto-membresia-tech p{
-        text-align: justify;
-    }
-}
-
-@media (min-width: 768px) {
-    .imagen-membresia-tech {
-        grid-column: 2/3;
-    }
+    padding-top: 10rem;
 }
 
 
