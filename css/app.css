@@ -177,19 +177,6 @@ img {
 
 
 /* Sobre tech pro */
-.sobre-tech {
-    background-image: linear-gradient( to bottom, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
-    background-position: right;
-    background-repeat: repeat, no-repeat;
-    background-size: 100%, 100rem;
-}
-@media (min-width: 768px)   {
-    .sobre-tech {
-        background-image: linear-gradient( to left, transparent 50%, var(--primario) 0%), url(../img/imagen-mujer.jpg);
-        background-repeat: repeat, no-repeat;
-    }
-}
-
 .sobre-tech-grid {
     display: grid;
     grid-template-rows: repeat(2, 40rem);
@@ -201,20 +188,28 @@ img {
         grid-template-rows: unset;
         row-gap: unset;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 4rem;
         padding: 10rem 0;
     }
 }
 
 .texto-sobre-tech {
+    background-color: var(--primario);
     grid-row: 2 / 3;
     color: var(--blanco);
     margin-top: 5rem;
 }
 @media (min-width: 768px)   {
     .texto-sobre-tech {
+        grid-column: 1 / 2;
+        grid-row: 1/2;
         padding: 0;
         margin-top: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .texto-sobre-tech-escrito {
+        padding-top: 12rem;
     }
 }
 
@@ -229,6 +224,12 @@ img {
 @media (min-width: 768px)   {
     .texto-sobre-tech p{
         text-align: justify;
+    }
+}
+
+@media (min-width: 768px) {
+    .imagen-sobre-tech {
+        grid-column: 2/3;
     }
 }
 
