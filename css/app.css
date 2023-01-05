@@ -179,14 +179,21 @@ img {
 /* Sobre tech pro */
 .sobre-tech-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2;
 }
 
+@media (min-width: 768px) {
+    .sobre-tech-grid {
+        grid-rows: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
 .texto-sobre-tech {
     background-color: var(--primario);
     grid-row: 2 / 3;
     color: var(--blanco);
-    height: 480px;
+    height: 30rem;
 }
 @media (min-width: 768px)   {
     .texto-sobre-tech {
@@ -194,12 +201,17 @@ img {
         grid-row: 1/2;
         padding: 0;
         margin-top: 0;
+        height: 100%;
     }
 }
 
+.texto-sobre-tech {
+    padding-top: 4rem;
+}
 @media (min-width: 768px) {
     .texto-sobre-tech-escrito {
-        padding-top: 12rem;
+       margin-top: 8rem; 
+        padding-top: 0;
     }
 }
 
