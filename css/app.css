@@ -72,6 +72,10 @@ img {
     -webkit-background-clip: text; /* A que parte del elemento se agrega a ese background */
 }
 
+a{
+    text-decoration: none;
+}
+
 
 /* Header */
 .header {
@@ -184,7 +188,7 @@ img {
 
 @media (min-width: 768px) {
     .sobre-tech-grid {
-        grid-rows: unset;
+        grid-row: unset;
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -302,11 +306,11 @@ img {
 }
 
 .modelo-a {
-    background-image: url(../img/monitor.svg);
+    background-image: url(../img/recuperacion.png);
 }
 
 .modelo-b {
-    background-image: url(../img/mantenimiento.svg);
+    background-image: url(../img/mantenimiento.png);
 }
 
 .modelo-c {
@@ -335,8 +339,14 @@ img {
     background-image: url(../img/remota.png);
 }
 
+.modelo-e {
+    background-image: url(../img/actualizacion.png);
+}
+
 .modelo-f {
     background-image: url(../img/limpieza.png);
+    background-color: var(--primario);
+    color: var(--blanco);
 }
 
 /* Membresía */
