@@ -456,3 +456,29 @@ video{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Externas */
+
+.navegacion {
+    background-color: var(--negro);
+    padding: 1rem;
+
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-nav {
+    max-width: 20%;
+}
+@media (min-width: 768px) {
+    .imagen-nav {
+        max-width: 10%;
+    }
+}
+.encabezado-nav {
+    text-align: center;
+}
