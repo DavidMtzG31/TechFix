@@ -511,3 +511,7 @@ video{
         padding-bottom: 0rem;
     }
 }
+
+a {
+    color: var(--blanco);
+}
