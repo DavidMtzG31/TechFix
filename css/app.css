@@ -431,3 +431,9 @@ video{
 .enviar:hover {
     cursor: pointer;
 }
+
+.construccion {
+    background-image: url(../img/construccion.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
